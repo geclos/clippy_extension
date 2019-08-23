@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Clippy",
+  "description": "Clip interesting content from the internet",
+  "version": "0.1",
+  "permissions": ["tabs", "http://*/*", "https://*/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "clip": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Clip selection"
+    }
+  }
+}
